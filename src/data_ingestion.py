@@ -73,7 +73,7 @@ def main():
         df = load_data(file_url=data_path)
         df_preprocessed = preprocess_data(df=df)
         train_data, test_data = train_test_split(df_preprocessed, test_size=test_size, random_state=42)
-        save_data(train_data=train_data, test_data=test_data, url ='../data')
+        save_data(train_data=train_data, test_data=test_data, url ='./data')
     except Exception as e:
         logger.error("%s", e)
 

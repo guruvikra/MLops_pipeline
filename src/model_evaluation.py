@@ -130,7 +130,7 @@ def main():
 
         #     live.log_params(params)
         
-        save_metrics(metrics, '../reports/metrics.json')
+        save_metrics(metrics, './reports/metrics.json')
     except Exception as e:
         logger.error('Failed to complete the model evaluation process: %s', e)
         print(f"Error: {e}")

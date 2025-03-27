@@ -93,7 +93,7 @@ def main():
         test_data_processed = preprocess_data(test_data)
         logger.debug("data preprocessed")
 
-        data_path = os.path.join('../data',"interim")
+        data_path = os.path.join('./data',"interim")
         os.makedirs(data_path, exist_ok=True)
 
         train_data_processed.to_csv(os.path.join(data_path, "train_preprocessed.csv"), index=False)
